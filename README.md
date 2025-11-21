@@ -53,47 +53,15 @@ MongoDB: Persists every analysis result, allowing users to share or revisit thei
 # 🛠️ Tech Stack
 
 Frontend:
-
 Next.js 16 (App Router)
-
 React
-
 Tailwind CSS
-
 Lucide React (Icons)
 
 Backend:
-
 Node.js (Next.js Runtime)
-
 MongoDB (Mongoose ODM)
-
 HackerNews Public API
-
-📂 Project Structure
-
-career-ai/
-│
-├── src/
-│   ├── app/                  # App Router (Pages & API)
-│   │   ├── api/              # Backend Routes (skill-gap, roadmap, analysis)
-│   │   ├── dashboard/        # Result Page (Server Component)
-│   │   ├── layout.tsx        # Root Layout
-│   │   └── page.tsx          # Landing Page (Input Form)
-│   │
-│   ├── components/           # UI Components
-│   │   ├── features/         # Logic-heavy components (Charts, NewsFeed)
-│   │   └── ui/               # Reusable atoms (Cards, Buttons)
-│   │
-│   ├── lib/                  # Utilities
-│   │   ├── constants.ts      # Static Data (Standards, Roadmaps)
-│   │   └── db.ts             # Database Connection
-│   │
-│   └── models/               # Mongoose Schemas
-│       └── Analysis.ts       # Data Model
-│
-├── public/                   # Static Assets
-└── README.md
 
 
 ## ⚙️ Installation & Setup
@@ -101,7 +69,7 @@ career-ai/
 1. Setup
 
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/sayyub80/code-at-random.git
 
 # Navigate to the project directory
 cd career-ai
@@ -113,11 +81,9 @@ npm install
 2. Configuration
 
 Create a .env.local file in the root directory:
-
 MONGODB_URI=your_mongodb_connection_string
 
 
 3. Run
-
 npm run dev
 Access the app at http://localhost:3000.
